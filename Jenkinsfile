@@ -10,7 +10,7 @@ pipeline {
                 sh 'mvn clean install'
             }
         }
-         stage('Build docker image'){
+         stage('Start container'){
             steps{
                 script{
                     sh 'docker build -t givanc/test-cicd:latest .'
