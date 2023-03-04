@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  springboot:
+    image: givanc/testcicd:latest
+    restart: always
+    networks:
+      - TestCICD
+    ports:
+      - ${PORT_APP}:8080
+networks:
+  TestCICD:
+    external: true
+
