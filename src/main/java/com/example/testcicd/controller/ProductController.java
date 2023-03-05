@@ -15,7 +15,7 @@ public class ProductController {
 
     @GetMapping("/test")
     public String test(){
-        String test = "test3";
+        String test = "test4";
         return test;
     }
 
