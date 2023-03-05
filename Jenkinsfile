@@ -20,7 +20,7 @@ pipeline {
                stage('Push image to Hub'){
             steps{
                 script{
-                    sh 'docker compose up -d --no-color --wait'
+                    sh 'docker compose up -d --wait'
                     sh 'docker compose ps'
                 }
             }
